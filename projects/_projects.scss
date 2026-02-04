@@ -78,6 +78,105 @@
     }
 }
 
+// One project (single project detail page)
+.projects-page .one-project {
+    padding: 40px 15px 100px 15px;
+    color: #000;
+    direction: rtl;
+    text-align: right;
+    background: #fff;
+    min-height: 50vh;
+    @media (max-width: $max-9) {
+        padding: 30px 15px 80px 15px;
+    }
+    @media (max-width: $max-5) {
+        padding: 24px 15px 60px 15px;
+    }
+    .one-project-article {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .one-project-breadcrumb {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            color: #b52c1f;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .breadcrumb-sep {
+            margin: 0 0.35rem;
+            color: #000;
+        }
+        .breadcrumb-current {
+            color: #000;
+        }
+    }
+    .one-project-header {
+        margin-bottom: 2rem;
+    }
+    .one-project-category {
+        display: inline-block;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #b52c1f;
+        margin-bottom: 0.5rem;
+    }
+    .one-project-title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 1.4;
+        margin: 0 0 0.75rem 0;
+        color: #000;
+        @media (max-width: $max-5) {
+            font-size: 1.4rem;
+        }
+    }
+    .one-project-lead {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #333;
+        margin: 0;
+    }
+    .one-project-body {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 2rem 0 1rem 0;
+            color: #000;
+            &:first-of-type {
+                margin-top: 1.5rem;
+            }
+        }
+        p {
+            margin: 0 0 1rem 0;
+            color: #333;
+        }
+    }
+    .one-project-footer {
+        margin-top: 2.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #eee;
+    }
+    .one-project-back {
+        color: #b52c1f;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+        display: inline-flex;
+        align-items: center;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
 // LTR styles for English language
 [lang="en"] {
     .projects-page {

@@ -240,61 +240,95 @@
                             طرق جديدة <span> لعرض محتوى المستخدم على الدعم الرقمي</span> وتصور الفنون المستقبلية.</p>
                     </div>
     
-                    <div class="blog-container">
-                        <div class="row">
-    
-                            <div class="col-lg-4">
-                                <div class="blog-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-                                    <figure style="background-image: url(../assets/images/blog/01.webp)"></figure>
-                                    <div class="blog-cat">
-                                        <span>تطوير المواقع</span>
-                                        <h4>.</h4>
-                                        <span>موقع شركة نجد لحلول الأعمال</span>
+                    <div class="row blog-page-row">
+                        <!-- Sidebar: Search + Filter + Category -->
+                        <aside class="col-lg-4 col-xl-3 blog-sidebar order-lg-1 ">
+                            <div class="blog-sidebar-inner">
+                                <div class="blog-sidebar-search">
+                                    <label class="blog-sidebar-label">بحث</label>
+                                    <div class="blog-search-wrap">
+                                        <input type="text" id="blog-search" class="blog-search-input" placeholder="ابحث في المدونة..." autocomplete="off" />
+                                        <span class="blog-search-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                                <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"/>
+                                            </svg>
+                                        </span>
                                     </div>
-                                    <h3>كيف يؤدي الاستثمار في التصميم الجيد إلى نجاح الأعمال على المدى الطويل</h3>
+                                </div>
+                                <div class="blog-sidebar-filter">
+                                    <label class="blog-sidebar-label">ترتيب</label>
+                                    <select id="blog-filter" class="blog-filter-select">
+                                        <option value="default">الأحدث أولاً</option>
+                                        <option value="oldest">الأقدم أولاً</option>
+                                        <option value="title">حسب العنوان</option>
+                                    </select>
+                                </div>
+                                <div class="blog-sidebar-categories">
+                                    <label class="blog-sidebar-label">التصنيفات</label>
+                                    <ul class="blog-categories-list list-unstyled">
+                                        <li><button type="button" class="blog-cat-btn active" data-category="all"><span class="blog-cat-count">0</span><span class="blog-cat-label">الكل</span></button></li>
+                                        <li><button type="button" class="blog-cat-btn" data-category="تطوير المواقع"><span class="blog-cat-count">0</span><span class="blog-cat-label">تطوير المواقع</span></button></li>
+                                        <li><button type="button" class="blog-cat-btn" data-category="التصميم"><span class="blog-cat-count">0</span><span class="blog-cat-label">التصميم</span></button></li>
+                                        <li><button type="button" class="blog-cat-btn" data-category="التسويق الرقمي"><span class="blog-cat-count">0</span><span class="blog-cat-label">التسويق الرقمي</span></button></li>
+                                    </ul>
                                 </div>
                             </div>
-    
-                            <div class="col-lg-4">
-                                <div class="blog-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-                                    <figure style="background-image: url(../assets/images/blog/02.webp)">
-                                        <div class="blog-date">
-    
-                                        </div>
-                                    </figure>
-                                    <div class="blog-cat">
-                                        <span>تطوير المواقع</span>
-                                        <h4>.</h4>
-                                        <span>موقع شركة نجد لحلول الأعمال</span>
-                                    </div>
-                                    <h3>كيف يؤدي الاستثمار في التصميم الجيد إلى نجاح الأعمال على المدى الطويل</h3>
-                                </div>
-                            </div>
-    
-                            <div class="col-lg-4">
-                                <div class="blog-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
-                                    <figure style="background-image: url(../assets/images/blog/03.webp)"></figure>
-                                    <div class="blog-cat">
-                                        <span>تطوير المواقع</span>
-                                        <h4>.</h4>
-                                        <span>موقع شركة نجد لحلول الأعمال</span>
-                                    </div>
-                                    <h3>كيف يؤدي الاستثمار في التصميم الجيد إلى نجاح الأعمال على المدى الطويل</h3>
-                                </div>
-                            </div>
+                        </aside>
 
-                            <div class="col-lg-4">
-                                <div class="blog-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
-                                    <figure style="background-image: url(../assets/images/blog/02.webp)"></figure>
-                                    <div class="blog-cat">
-                                        <span>تطوير المواقع</span>
-                                        <h4>.</h4>
-                                        <span>موقع شركة نجد لحلول الأعمال</span>
+                        <div class="col-lg-8 col-xl-9 order-lg-2">
+                            <div class="blog-container">
+                                <div class="row" id="blog-cards-row">
+                                    <div class="col-lg-6 col-xl-4 blog-col" data-category="تطوير المواقع" data-order="0">
+                                        <div class="blog-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                                            <figure style="background-image: url(../assets/images/blog/01.webp)"></figure>
+                                            <div class="blog-cat">
+                                                <span>تطوير المواقع</span>
+                                                <h4>.</h4>
+                                                <span>موقع شركة نجد لحلول الأعمال</span>
+                                            </div>
+                                            <h3>كيف يؤدي الاستثمار في التصميم الجيد إلى نجاح الأعمال على المدى الطويل</h3>
+                                        </div>
                                     </div>
-                                    <h3>كيف يؤدي الاستثمار في التصميم الجيد إلى نجاح الأعمال على المدى الطويل</h3>
+                                    <div class="col-lg-6 col-xl-4 blog-col" data-category="تطوير المواقع" data-order="1">
+                                        <div class="blog-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                                            <figure style="background-image: url(../assets/images/blog/02.webp)">
+                                                <div class="blog-date"></div>
+                                            </figure>
+                                            <div class="blog-cat">
+                                                <span>تطوير المواقع</span>
+                                                <h4>.</h4>
+                                                <span>موقع شركة نجد لحلول الأعمال</span>
+                                            </div>
+                                            <h3>كيف يؤدي الاستثمار في التصميم الجيد إلى نجاح الأعمال على المدى الطويل</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-xl-4 blog-col" data-category="التصميم" data-order="2">
+                                        <div class="blog-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                                            <figure style="background-image: url(../assets/images/blog/03.webp)"></figure>
+                                            <div class="blog-cat">
+                                                <span>التصميم</span>
+                                                <h4>.</h4>
+                                                <span>موقع شركة نجد لحلول الأعمال</span>
+                                            </div>
+                                            <h3>أفضل ممارسات التصميم لتحسين تجربة المستخدم</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-xl-4 blog-col" data-category="التسويق الرقمي" data-order="3">
+                                        <div class="blog-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                                            <figure style="background-image: url(../assets/images/blog/02.webp)"></figure>
+                                            <div class="blog-cat">
+                                                <span>التسويق الرقمي</span>
+                                                <h4>.</h4>
+                                                <span>موقع شركة نجد لحلول الأعمال</span>
+                                            </div>
+                                            <h3>استراتيجيات التسويق الرقمي الفعالة للشركات الناشئة</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="blog-no-results" class="blog-no-results text-center py-5" style="display: none;">
+                                    <p class="mb-0">لا توجد نتائج تطابق بحثك أو التصنيف المحدد.</p>
                                 </div>
                             </div>
-    
                         </div>
                     </div>
     
@@ -321,7 +355,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 text-center col-r p-0">
+                    <div class="col-lg-2 col-md-6 text-center col-r p-0">
                         <div class="footer-col">
                             <div class="Footer-head"><a href="#">روابط سريعة</a></div>
                             <ul class="list-unstyled">
@@ -334,7 +368,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 text-center col-r p-0">
+                    <div class="col-lg-2 col-md-6 text-center col-r p-0">
                         <div class="footer-col">
                             <div class="Footer-head"><a href="#">حلولنا الأساسية</a></div>
                             <ul class="list-unstyled">
@@ -366,7 +400,7 @@
                     </div>
 
 
-                    <!-- <div class="col-lg-3 col-md-6 text-center col-r p-0">
+                    <div class="col-lg-2 col-md-6 text-center col-r p-0">
                         <div class="footer-col">
                             <div class="Footer-head"><a href="#">القائمة البريدية</a></div>
                             <div class="nav-actions">
@@ -423,7 +457,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
                 </div>
             </div>
@@ -452,6 +486,80 @@
         <script src="../main.js"></script>
         <script src="https://cdn.lordicon.com/lordicon.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.1.21/tilt.jquery.min.js"></script>
+        <!-- Blogs: search, filter, category -->
+        <script>
+            (function () {
+                var $row = $('#blog-cards-row');
+                var $cols = $row.find('.blog-col');
+                var $noResults = $('#blog-no-results');
+                var currentCategory = 'all';
+                var searchQuery = '';
+
+                function getCardText($col) {
+                    var $card = $col.find('.blog-card');
+                    return ($card.find('.blog-cat span').first().text() + ' ' + $card.find('h3').text()).toLowerCase();
+                }
+
+                function applyFilters() {
+                    var visible = 0;
+                    $cols.each(function () {
+                        var $col = $(this);
+                        var catMatch = currentCategory === 'all' || $col.data('category') === currentCategory;
+                        var textMatch = !searchQuery || getCardText($col).indexOf(searchQuery.toLowerCase()) !== -1;
+                        var show = catMatch && textMatch;
+                        $col.toggleClass('blog-col-hidden', !show).toggle(show);
+                        if (show) visible++;
+                    });
+                    $noResults.toggle(visible === 0);
+                }
+
+                function sortCards(order) {
+                    var $items = $cols.get();
+                    $items.sort(function (a, b) {
+                        var $a = $(a), $b = $(b);
+                        var titleA = $a.find('.blog-card h3').text().trim();
+                        var titleB = $b.find('.blog-card h3').text().trim();
+                        if (order === 'title') return titleA.localeCompare(titleB, 'ar');
+                        var orderA = parseInt($a.data('order'), 10);
+                        var orderB = parseInt($b.data('order'), 10);
+                        if (order === 'oldest') return orderA - orderB;
+                        return orderB - orderA;
+                    });
+                    $.each($items, function (i, el) { $row.append(el); });
+                }
+
+                $('#blog-search').on('input', function () {
+                    searchQuery = $(this).val().trim();
+                    applyFilters();
+                });
+
+                $('#blog-filter').on('change', function () {
+                    sortCards($(this).val());
+                });
+
+                $('.blog-cat-btn').on('click', function () {
+                    $('.blog-cat-btn').removeClass('active');
+                    $(this).addClass('active');
+                    currentCategory = $(this).data('category');
+                    applyFilters();
+                });
+
+                function updateCategoryCounts() {
+                    var counts = { all: $cols.length };
+                    $cols.each(function () {
+                        var cat = $(this).data('category');
+                        counts[cat] = (counts[cat] || 0) + 1;
+                    });
+                    $('.blog-cat-btn').each(function () {
+                        var cat = $(this).data('category');
+                        $(this).find('.blog-cat-count').text(counts[cat] != null ? counts[cat] : 0);
+                    });
+                }
+
+                updateCategoryCounts();
+                applyFilters();
+            })();
+        </script>
         <!-- Addition Scripts -->
 
 
