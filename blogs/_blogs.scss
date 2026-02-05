@@ -249,3 +249,12 @@
         }
     }
 }
+
+// LTR style when html lang=en (all pages)
+html[lang="en"],
+[lang="en"] {
+    .one-blog {
+        direction: ltr;
+        text-align: left;
+    }
+}

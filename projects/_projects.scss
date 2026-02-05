@@ -1,7 +1,7 @@
 .projects-page {
     .projects {
         padding: 100px 0 0 0;
-        color: #FFF;
+        color: #000;
         @media (max-width: $max-9) {
             padding: 80px 0 0 0;
         }
@@ -28,7 +28,7 @@
                 padding: 12px 24px;
                 background: transparent;
                 border: 2px solid rgba(255, 255, 255, 0.2);
-                color: #FFF;
+                color: #000;
                 border-radius: 30px;
                 cursor: pointer;
                 transition: all 0.3s ease;
@@ -48,17 +48,17 @@
                 }
                 
                 &:hover {
-                    border-color: #007bff;
-                    color: #007bff;
+                    border-color: #b52c1f;
+                    color: #b52c1f;
                     transform: translateY(-2px);
                 }
                 
                 &.active {
-                    background: #007bff;
-                    border-color: #007bff;
+                    background: #b52c1f;
+                    border-color: #b52c1f;
                     color: #FFF;
                     transform: translateY(-2px);
-                    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+                    box-shadow: 0 8px 25px rgba(181, 44, 31, 0.3);
                 }
                 
                 &.last-li {
@@ -177,7 +177,8 @@
     }
 }
 
-// LTR styles for English language
+// LTR styles for English language (all pages)
+html[lang="en"],
 [lang="en"] {
     .projects-page {
         .projects {
@@ -190,5 +191,9 @@
                 }
             }
         }
+    }
+    .projects-page .one-project {
+        direction: ltr;
+        text-align: left;
     }
 }
