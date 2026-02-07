@@ -49,6 +49,7 @@
 @import "blogs/blogs";
 // @import "faq/faq";
 @import "projects/projects";
+@import "products/products";
 @import "who-we-are/about";
 
 //-------- [ End Pages ] --------
@@ -2270,13 +2271,115 @@ a {
         }
     }
 
+    // ERP Slider Styles
+    .erp-slider-wrapper {
+        position: relative;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        direction: ltr;
+        @media (max-width: $max-5) {
+            margin-top: 35px;
+            gap: 15px;
+        }
+    }
+
+    .erp-slider-btn {
+        flex-shrink: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #e6e6e6;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 10;
+
+        @media (max-width: $max-5) {
+            width: 40px;
+            height: 40px;
+        }
+
+        svg {
+            width: 24px;
+            height: 24px;
+            fill: #b52c1f;
+            transition: fill 0.3s ease;
+
+            @media (max-width: $max-5) {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &:hover {
+            border-color: #b52c1f;
+            background: #b52c1f;
+            svg {
+                fill: #fff;
+            }
+        }
+
+        &:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            &:hover {
+                border-color: #e6e6e6;
+                background: #fff;
+                svg {
+                    fill: #b52c1f;
+                }
+            }
+        }
+    }
+
+    .erp-slider-container {
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .erp-slider-track {
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 30px;
+
+        @media (max-width: $max-9) {
+            gap: 25px;
+        }
+        @media (max-width: $max-5) {
+            gap: 20px;
+        }
+    }
+
+    .erp-slider-item {
+        flex: 0 0 calc(33.333% - 20px);
+        min-width: 0;
+
+        @media (max-width: $max-9) {
+            flex: 0 0 calc(50% - 12.5px);
+        }
+        @media (max-width: $max-5) {
+            flex: 0 0 100%;
+        }
+
+        .erp-card {
+            margin-bottom: 0;
+            height: 100%;
+        }
+    }
+
     .erp-card {
         border: 1px solid #e6e6e6;
         border-radius: 12px;
         padding: 32px 28px 28px;
         height: 100%;
         transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
 
         @media (max-width: $max-9) {
             padding: 28px 24px 24px;
@@ -2308,6 +2411,9 @@ a {
             &.erp-card--oracle {
                 box-shadow: inset 16px -16px 40px -12px rgba(248, 0, 0, 0.18), 0 12px 40px rgba(181, 44, 31, 0.08);
             }
+            &.erp-card--next {
+                box-shadow: inset 16px -16px 40px -12px rgba(99, 102, 241, 0.2), 0 12px 40px rgba(181, 44, 31, 0.08);
+            }
         }
 
         .erp-card-badge {
@@ -2325,7 +2431,7 @@ a {
         .erp-card-title {
             font-size: 1.4rem;
             font-weight: 700;
-            color: #0e3e2f;
+            color: #000;
             margin-bottom: 8px;
             line-height: 1.35;
 
@@ -2388,7 +2494,8 @@ a {
             color: #fff;
             border: 1px solid transparent;
             transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-
+            direction: rtl;
+            margin-left: auto;
             @media (max-width: $max-5) {
                 padding: 10px 20px;
                 width: 100%;
@@ -2432,6 +2539,16 @@ a {
     &:hover {
         background: darken(#F80000, 8%);
         border-color: darken(#F80000, 8%);
+        color: #fff;
+        svg { fill: #fff; }
+    }
+}
+.erp-card--next .erp-card-cta {
+    background: #6366F1;
+    border-color: #6366F1;
+    &:hover {
+        background: darken(#6366F1, 8%);
+        border-color: darken(#6366F1, 8%);
         color: #fff;
         svg { fill: #fff; }
     }
@@ -4205,3 +4322,62 @@ a.header-btn, .book-btn, button:not([type="checkbox"]):not([type="radio"]) {
 }
 
 //-------- [ End Responsive ] --------
+
+// Floating WhatsApp Button
+.floating-whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    z-index: 9999;
+    text-decoration: none;
+    color: #fff;
+
+    @media (max-width: $max-5) {
+        width: 55px;
+        height: 55px;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    svg {
+        width: 32px;
+        height: 32px;
+        fill: currentColor;
+
+        @media (max-width: $max-5) {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    &:hover {
+        background: #20BA5A;
+        transform: translateY(-5px);
+        box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+    }
+
+    &:active {
+        transform: translateY(-2px);
+    }
+}
+
+// Position WhatsApp button on right for English language
+html[lang=en] .floating-whatsapp-btn,
+[lang=en] .floating-whatsapp-btn {
+    left: auto;
+    right: 20px;
+
+    @media (max-width: $max-5) {
+        right: 15px;
+        left: auto;
+    }
+}
