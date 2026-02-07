@@ -1,6 +1,6 @@
 //----------------------------------------------------------------
 // Toggle Navbar
-$(".header .nav-logo .nav-mobile-icon").on("click", function () {
+$(".header .nav-big-nav-icon").on("click", function () {
   $(".big-nav").toggleClass("big-nav-hiddin");
   $(".close-overlay").addClass("open-over");
 });
@@ -35,14 +35,3 @@ $(".close-overlay").on("click", function () {
   $(".order-service").removeClass("open-popup");
   $(".contact-container").removeClass("open-popup");
 });
-
-
-
-
-
-// Toggle Language
-if ($("html").attr("lang") == "en") {
-  $(".page-lang").text("العربية");
-} else {
-  $(".page-lang").text("English");
-}

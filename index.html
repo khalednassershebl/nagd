@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 
 <head>
     <!-- Main Meta Tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
     <!-- Important Meta Tags -->
     <meta name="author" content="" />
@@ -38,7 +38,7 @@
                 <div class="big-nav-header-title">
                     <div class="nav-logo-container">
                         <a href="index.html">
-                            <img src="assets/images/original/Artboard10.png" alt="logo" />
+                            <img src="assets/images/logos/logo-dark.png" alt="logo" />
                         </a>
                     </div>
                     <span class="close-big-nav">
@@ -143,11 +143,82 @@
                         <div class="nav-links wow animate__animated animate__fadeInDown">
                             <ul class="list-unstyled">
                                 <li class="nav-link-active"><a href="../index.html">الـرئـيـسـيـة</a></li>
-                                <li><a href="../who-we-are/about.html">مـن نـحـن</a></li>
-                                <li><a href="../forte/forte.html">الـخـدمـات</a></li>
-                                <li><a href="../products/products.html">الـفـريـق</a></li>
-                                <li><a href="../blog/blog.html">الـمـدونـة</a></li>
-                                <li><a href="../contacts/contacts.html">الـمـشـاريـع</a></li>
+                                <li><a href="../who-we-are/about.html">عن نجد</a></li>
+                                <li class="mega-menu-item">
+                                    <a href="#" class="mega-menu-toggle" onclick="event.preventDefault(); toggleMegaMenu();">
+                                        <span>خدماتنا</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z"></path></svg>
+                                    </a>
+                                    <div class="mega-menu" id="megaMenu">
+                                        <div class="mega-menu-content">
+                                            <div class="mega-menu-column">
+                                                <h4>استشارات الأعمال</h4>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">دراسات الجدوى والسوق</a></li>
+                                                    <li><a href="#">بناء نماذج العمل</a></li>
+                                                    <li><a href="#">استراتيجيات النمو</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-menu-column">
+                                                <h4>التقنية والذكاء الاصطناعي</h4>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">حلول ERP العالمية</a></li>
+                                                    <li><a href="#">الحلول الرقمية</a></li>
+                                                    <li><a href="#">أتمتة العمليات (RPA)</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-menu-column">
+                                                <h4>الخدمات التكميلية</h4>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">التسويق والمبيعات</a></li>
+                                                    <li><a href="#">الخدمات القانونية</a></li>
+                                                    <li><a href="#">إدارة المشاريع</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mega-menu-item">
+                                    <a href="#" class="mega-menu-toggle" onclick="event.preventDefault(); toggleMegaMenuAdmin();">
+                                        <span>الأنظمة الإدارية</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z"></path></svg>
+                                    </a>
+                                    <div class="mega-menu" id="megaMenuAdmin">
+                                        <div class="mega-menu-content mega-menu-4-columns">
+                                            <div class="mega-menu-column">
+                                                <h4>أنظمة ERP</h4>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">Odoo, SAP, Oracle</a></li>
+                                                    <li><a href="#">أنظمة تخطيط الموارد</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-menu-column">
+                                                <h4>الأنظمة المالية</h4>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">المحاسبة العامة</a></li>
+                                                    <li><a href="#">الفوترة الإلكترونية (ZATCA)</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-menu-column">
+                                                <h4>الموارد البشرية</h4>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">نظام الرواتب</a></li>
+                                                    <li><a href="#">إدارة الموظفين</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="mega-menu-column">
+                                                <h4>العمليات والمخزون</h4>
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#">إدارة المخزون</a></li>
+                                                    <li><a href="#">نقاط البيع (POS)</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="../blog/blog.html">القطاعات</a></li>
+                                <li><a href="../contacts/contacts.html">المدونة</a></li>
+                                <li><a href="../contacts/contacts.html">الأسئلة الشائعة</a></li>
                             </ul>
                             <!-- <div class="nav-links-search">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -207,7 +278,9 @@
                 <div class="index-header-content">
                     <div class="index-header-content-details">
                         <div class="index-header-head-social wow animate__animated animate__fadeInDown">
-                            <h1>نجد لحلول الأعمال. <br> إبــــــداع فــريـــقــنـــا. <br> لــيــس لــة حــــدود.</h1>
+                            <span>شريكك الأول للتحول الرقمي</span>
+                            <h1>نبتكر الحلول الذكية</h1>
+                            <h1>لنصنع مستقبل أعمالك</h1>
                             <div class="social-links-rotated wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                                 <span>FOLLOW US - </span>
                                 <a href="#">FACEBOOK.</a>
@@ -219,14 +292,38 @@
                         </div>
                         <div class="header-bottom-info wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
                             <div class="text-button">
-                                <p>تُمثل نجد المتكاملة نهجًا احترافيًا متكاملًا في مجال المقاولات. نجمع بين الخبرة الهندسية والكفاءة التشغيلية .</p>
-                                <a class="header-btn" href="#"><span>استكشف ماذا نقدم</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z">
-                                        </path>
-                                    </svg>
-                                </a>
+                                <p>في شركة نجد، نقدم منظومة متكاملة من حلول الأعمال الاستراتيجية، الأنظمة التقنية المتطورة، وحلول الذكاء الاصطناعي المصممة لرفع كفاءة مؤسستك.</p>
+                                <div class="header-buttons">
+                                    <a class="header-btn" href="#"><span>اطلب عرض سعر</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a class="header-btn header-btn-left" href="#"><span>استكشف خدماتنا</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="header-stats">
+                                    <div class="stat-item">
+                                        <span class="stat-number">+500</span>
+                                        <span class="stat-label">عميل في المنطقة</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">98%</span>
+                                        <span class="stat-label">نسبة رضا العملاء</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <span class="stat-number">ERP</span>
+                                        <span class="stat-label">أنظمة عالمية معتمدة
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="vision-logo wow animate__animated animate__fadeInRight" data-wow-delay="0.7s">
@@ -235,6 +332,94 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+
+        <!-- Story Section -->
+        <div class="story-section">
+            <div class="container">
+
+                <div class="story-content">
+                    <div class="row">
+                        <!-- Vision and Value Cards -->
+                        <div class="col-lg-6">
+                            <div class="story-cards-wrapper">
+                                <!-- Text and Features Section -->
+                                <div class="story-text-features">
+                                    <div class="index-section-header m-0 wow animate__animated animate__fadeInUp">
+                                        <div class="index-section-header-head">
+                                            <span>قصتنا</span>
+                                            <h3 style="font-size: 2rem;" calss="m-0">
+                                                فريق عمل متكامل
+                                                
+                                                خبراء في الإدارة والتقنية</h3>
+                                        </div>
+                                    </div>
+                                    <div class="story-features-row">
+                                        <p class="text">"نجد لحلول الأعمال" هي أكثر من مجرد شركة استشارات؛ نحن بيت خبرة متكامل يجمع بين الفهم العميق للسوق السعودي والإقليمي وبين أحدث التقنيات العالمية. تأسست نجد لتكون الجسر الذي يعبر به عملاؤنا نحو المستقبل، متسلحين بالخبرة والحوكمة الرشيدة.</p>
+
+                                        <div class="story-feature-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                            </svg>
+                                            <span>خبرة متخصصة</span>
+                                        </div>
+                                        <div class="story-feature-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                            </svg>
+                                            <span>حلول مبتكرة</span>
+                                        </div>
+                                        <div class="story-feature-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                            </svg>
+                                            <span>دعم مستمر</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Vision and Value Cards in One Line -->
+                                <div class="story-cards-row">
+                                    <div class="story-card vision-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                                        <div class="story-card-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                                <circle cx="12" cy="12" r="3"/>
+                                            </svg>
+                                        </div>
+                                        <div class="story-card-content">
+                                            <h4>رؤيتنا</h4>
+                                            <p>الريادة في تمكين المؤسسات في الشرق الأوسط نحو اقتصاد رقمي مزدهر.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="story-card value-card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                                        <div class="story-card-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                            </svg>
+                                        </div>
+                                        <div class="story-card-content">
+                                            <h4>قيمنا</h4>
+                                            <p>الالتزام بالجودة، الشفافية المطلقة، والابتكار المستمر.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Story Image -->
+                        <div class="col-lg-6">
+                            <div class="why-icon why-icon-business wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay="0.3s">
+                                <img src="assets/images/about.jpg" alt="فريق عمل نجد - حلول الأعمال والاستشارات" class="why-icon-business-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -351,535 +536,51 @@
             </div>
         </div>
 
-        <!-- Solution & Pain Point Section -->
-        <div class="solution-pain-section">
+
+        <!-- Added Value Section -->
+        <section class="added-values-section">
             <div class="container">
-                <div class="index-section-header-center wow animate__animated animate__fadeInUp">
+                <div class="index-section-header-center text-center mb-5">
                     <div class="index-section-header-head">
-                        <span>ماذا نقدم ؟</span>
-                        <h3>لماذا تختار التشتت ونحن نقدم الحل المتكامل؟</h3>
+                        <span class="pretitle">لماذا نجد ؟</span>
+                        <h3>قيمنا المضافة لمشروعك</h3>
+                        <p class="text">نمنح مشروعك قيمة حقيقية من خلال خبرة مثبتة، وفريق متخصص، ودعم متواصل يرافقك في كل مرحلة.</p>
                     </div>
-                    <p class="text">تنمية العلامات التجارية من خلال الإبداع الجريء والاستراتيجي، مع التركيز على البحث عن
-                        طرق جديدة <span> لعرض محتوى المستخدم على الدعم الرقمي</span> وتصور الفنون المستقبلية.</p>
                 </div>
 
-                <div class="solution-pain-container">
-                    <div class="row">
+                <div class="added-values-wrapper">
+                    <div class="value-flow-line">
+                        <svg viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true">
+                            <path d="M40 140 C 140 40, 220 200, 300 80 S 520 160, 560 60" />
+                        </svg>
+                    </div>
 
-                        <!-- Problem Side (Right) - المشكلة -->
-                        <div class="col-lg-6">
-                            <div class="problem-side wow animate__animated animate__fadeInRight">
-                                <div class="problem-header">
-                                    <h4>التعامل مع جهات متعددة بشكل منفصل ومكلف
-                                    </h4>
-                                    <span class="problem-badge">تشتت وتكلفة عالية</span>
-                                </div>
-                            <div class="problem-content">
-                                <div class="problem-center-wrapper">
-                                    <svg class="problem-connection-lines" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                                        <line class="problem-line problem-line-1" x1="50" y1="50" x2="70" y2="30"/>
-                                        <line class="problem-line problem-line-2" x1="50" y1="50" x2="70" y2="70"/>
-                                        <line class="problem-line problem-line-3" x1="50" y1="50" x2="30" y2="70"/>
-                                        <line class="problem-line problem-line-4" x1="50" y1="50" x2="30" y2="30"/>
-                                    </svg>
-                                    <div class="client-icon problem-client">
-                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                                        </svg> -->
-                                        <lord-icon
-                                            src="https://cdn.lordicon.com/kdduutaw.json"
-                                            trigger="loop"
-                                            delay="2000"
-                                            colors="primary:#b52c1f,secondary:#000000">
-                                        </lord-icon>
-                                        <span>العميل</span>
-                                    </div>
-                                    <div class="separate-services">
-                                        <div class="service-item separate service-1">
-                                            <lord-icon
-                                                src="https://cdn.lordicon.com/shcfcebj.json"
-                                                trigger="loop"
-                                                delay="500"
-                                                colors="primary:#b52c1f,secondary:#000000">
-                                            </lord-icon>
-                                            <span>مطور أعمال</span>
-                                        </div>
-                                        <div class="service-item separate service-2">
-                                            <lord-icon
-                                                src="https://cdn.lordicon.com/shcfcebj.json"
-                                                trigger="loop"
-                                                delay="1000"
-                                                colors="primary:#b52c1f,secondary:#000000">
-                                            </lord-icon>
-                                            <span>مسوق</span>
-                                        </div>
-                                        <div class="service-item separate service-3">
-                                            <lord-icon
-                                                src="https://cdn.lordicon.com/shcfcebj.json"
-                                                trigger="loop"
-                                                delay="1500"
-                                                colors="primary:#b52c1f,secondary:#000000">
-                                            </lord-icon>
-                                            <span>مبرمج</span>
-                                        </div>
-                                        <div class="service-item separate service-4">
-                                            <lord-icon
-                                                src="https://cdn.lordicon.com/shcfcebj.json"
-                                                trigger="loop"
-                                                delay="2000"
-                                                colors="primary:#b52c1f,secondary:#000000">
-                                            </lord-icon>
-                                            <span>مصمم</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
+                    <div class="value-item">
+                        <div class="icon-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 6.99999C16.4183 6.99999 20 10.5817 20 15C20 19.4183 16.4183 23 12 23C7.58172 23 4 19.4183 4 15C4 10.5817 7.58172 6.99999 12 6.99999ZM12 8.99999C8.68629 8.99999 6 11.6863 6 15C6 18.3137 8.68629 21 12 21C15.3137 21 18 18.3137 18 15C18 11.6863 15.3137 8.99999 12 8.99999ZM12 10.5L13.3225 13.1797L16.2798 13.6094L14.1399 15.6953L14.645 18.6406L12 17.25L9.35497 18.6406L9.86012 15.6953L7.72025 13.6094L10.6775 13.1797L12 10.5ZM18 1.99999V4.99999L16.6366 6.13755C15.5305 5.5577 14.3025 5.17884 13.0011 5.04948L13 1.99899L18 1.99999ZM11 1.99899L10.9997 5.04939C9.6984 5.17863 8.47046 5.55735 7.36441 6.13703L6 4.99999V1.99999L11 1.99899Z"></path></svg>
                         </div>
+                        <h3>خبرة مثبتة</h3>
+                        <p>سنوات من العمل مع مشاريع متنوعة في قطاعك تضمن قرارات مبنية على تجارب حقيقية.</p>
+                    </div>
 
-                        <!-- Solution Side (Left) - نجد -->
-                        <div class="col-lg-6">
-                            <div class="solution-side wow animate__animated animate__fadeInLeft">
-                                <div class="solution-header">
-                                    <h4>نحن شريكك الوحيد من الاستراتيجية إلى التنفيذ</h4>
-                                    <span class="solution-badge">نقطة اتصال واحدة</span>
-                                </div>
-                                <div class="solution-content">
-                                    <svg class="connection-lines" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                                        <line class="line-to-service line-1" x1="50" y1="40" x2="15" y2="75"/>
-                                        <line class="line-to-service line-2" x1="50" y1="40" x2="38" y2="75"/>
-                                        <line class="line-to-service line-3" x1="50" y1="40" x2="63" y2="75"/>
-                                        <line class="line-to-service line-4" x1="50" y1="40" x2="85" y2="75"/>
-                                    </svg>
-                                    <div class="solution-center">
-                                        <div class="client-icon">
-                                            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                                            </svg> -->
-                                            <lord-icon
-                                                src="https://cdn.lordicon.com/kdduutaw.json"
-                                                trigger="loop"
-                                                delay="2000"
-                                                colors="primary:#b52c1f,secondary:#000000">
-                                            </lord-icon>
-                                            <span>العميل</span>
-                                        </div>
-                                        <div class="connection-line"></div>
-                                        <div class="nagd-icon">
-                                            <img src="assets/images/logos/logo-dark.png" alt="logo">
-                                        </div>
-                                    </div>
-                                    <div class="services-managed">
-                                        <div class="service-item">
-                                            <lord-icon
-                                            src="https://cdn.lordicon.com/shcfcebj.json"
-                                            trigger="loop"
-                                            delay="500"
-                                            colors="primary:#b52c1f,secondary:#000000">
-                                        </lord-icon>
-                                            <span>مطور أعمال</span>
-                                        </div>
-                                        <div class="service-item">
-                                            <lord-icon
-                                            src="https://cdn.lordicon.com/shcfcebj.json"
-                                            trigger="loop"
-                                            delay="1000"
-                                            colors="primary:#b52c1f,secondary:#000000"></lord-icon>
-                                            <span>مسوق</span>
-                                        </div>
-                                        <div class="service-item">
-                                            <lord-icon
-                                            src="https://cdn.lordicon.com/shcfcebj.json"
-                                            trigger="loop"
-                                            delay="1500"
-                                            colors="primary:#b52c1f,secondary:#000000"></lord-icon>
-                                            <span>مبرمج</span>
-                                        </div>
-                                        <div class="service-item">
-                                            <lord-icon
-                                            src="https://cdn.lordicon.com/shcfcebj.json"
-                                            trigger="loop"
-                                            delay="2000"
-                                            colors="primary:#b52c1f,secondary:#000000"></lord-icon>
-                                            <span>مصمم</span>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="value-item">
+                        <div class="icon-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9.55 11.5C8.30736 11.5 7.3 10.4926 7.3 9.25C7.3 8.00736 8.30736 7 9.55 7C10.7926 7 11.8 8.00736 11.8 9.25C11.8 10.4926 10.7926 11.5 9.55 11.5ZM10 19.748V16.4C10 15.9116 10.1442 15.4627 10.4041 15.0624C10.1087 15.0213 9.80681 15 9.5 15C7.93201 15 6.49369 15.5552 5.37091 16.4797C6.44909 18.0721 8.08593 19.2553 10 19.748ZM4.45286 14.66C5.86432 13.6168 7.61013 13 9.5 13C10.5435 13 11.5431 13.188 12.4667 13.5321C13.3447 13.1888 14.3924 13 15.5 13C17.1597 13 18.6849 13.4239 19.706 14.1563C19.8976 13.4703 20 12.7471 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 12.9325 4.15956 13.8278 4.45286 14.66ZM18.8794 16.0859C18.4862 15.5526 17.1708 15 15.5 15C13.4939 15 12 15.7967 12 16.4V20C14.9255 20 17.4843 18.4296 18.8794 16.0859ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM15.5 12.5C14.3954 12.5 13.5 11.6046 13.5 10.5C13.5 9.39543 14.3954 8.5 15.5 8.5C16.6046 8.5 17.5 9.39543 17.5 10.5C17.5 11.6046 16.6046 12.5 15.5 12.5Z"></path></svg>
                         </div>
+                        <h3>فريق متخصص</h3>
+                        <p>فريق متكامل من الخبراء التقنيين والاستراتيجيين يركز على تحقيق أهداف مشروعك.</p>
+                    </div>
 
+                    <div class="value-item">
+                        <div class="icon-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.9381 8H21C22.1046 8 23 8.89543 23 10V14C23 15.1046 22.1046 16 21 16H19.9381C19.446 19.9463 16.0796 23 12 23V21C15.3137 21 18 18.3137 18 15V9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9V16H3C1.89543 16 1 15.1046 1 14V10C1 8.89543 1.89543 8 3 8H4.06189C4.55399 4.05369 7.92038 1 12 1C16.0796 1 19.446 4.05369 19.9381 8ZM3 10V14H4V10H3ZM20 10V14H21V10H20ZM7.75944 15.7849L8.81958 14.0887C9.74161 14.6662 10.8318 15 12 15C13.1682 15 14.2584 14.6662 15.1804 14.0887L16.2406 15.7849C15.0112 16.5549 13.5576 17 12 17C10.4424 17 8.98882 16.5549 7.75944 15.7849Z"></path></svg>
+                        </div>
+                        <h3>دعم متواصل</h3>
+                        <p>مرافقة مستمرة قبل وأثناء وبعد الإطلاق لضمان استمرارية النمو والنجاح.</p>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Customer Segmentation Section -->
-        <div class="customer-segmentation">
-            <div class="container">
-                <div class="index-section-header-center wow animate__animated animate__fadeInUp">
-                    <div class="index-section-header-head">
-                        <span>اختر مسارك</span>
-                        <h3>نـسـاعـدك لـتـوجـيـه الـخـدمـة الـمـنـاسـبـة</h3>
-                    </div>
-                    <p class="text">اختر المسار المناسب لك حسب حجم شركتك واحتياجاتك الخاصة</p>
-                </div>
-
-                <div class="segmentation-cards">
-                    <div class="row">
-                        <!-- First Card: Establishment -->
-                        <div class="col-lg-6">
-                            <div class="segmentation-card establishment-card wow animate__animated animate__fadeInLeft">
-                                <div class="card-content">
-                                    <div class="card-header">
-                                        <div class="card-header-info">
-                                            <span class="card-badge">لرواد الأعمال</span>
-                                            <h3>تأسيس</h3>
-                                        </div>
-                                        <p class="card-description">نقدم لك الدعم الكامل لتأسيس مشروعك من البداية وحتى النجاح</p>
-                                    </div>
-                                    <div class="card-body">
-                                        <span class="card-services-label">محتويات المسار</span>
-                                        <ul class="card-services">
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>دراسات الجدوى</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>نماذج العمل</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>عروض المستثمرين</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>التسجيل والتراخيص</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>التخطيط المالي</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>الاستشارات القانونية</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>التصميم والهوية البصرية</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>إدارة المشاريع</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>التطوير التقني</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-footer">
-                                        <a href="#" class="segmentation-btn">
-                                            <span>اكتشف المزيد</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                <path d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z"/>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Second Card: Growth & Development -->
-                        <div class="col-lg-6">
-                            <div class="segmentation-card growth-card wow animate__animated animate__fadeInRight">
-                                <div class="card-content">
-                                    <div class="card-header">
-                                        <div class="card-header-info">
-                                            <span class="card-badge">للشركات القائمة</span>
-                                            <h3>نمو وتطوير</h3>
-                                        </div>
-                                        <p class="card-description">نساعد شركتك على النمو والتطوير من خلال حلول متكاملة ومبتكرة</p>
-                                    </div>
-                                    <div class="card-body">
-                                        <span class="card-services-label">محتويات المسار</span>
-                                        <ul class="card-services">
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>التحول الرقمي</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>هندسة العمليات BPR</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>الاستشارات الإدارية</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>التسويق الرقمي</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>إدارة الموارد البشرية</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>تحليل البيانات</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>الاستراتيجية التسويقية</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>تحسين الأداء</span>
-                                            </li>
-                                            <li>
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                                </svg>
-                                                <span>إدارة المخاطر</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-footer">
-                                        <a href="#" class="segmentation-btn">
-                                            <span>اكتشف المزيد</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                <path d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z"/>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="partners-tech-section">
-            <div class="container">
-                <div class="index-section-header-center wow animate__animated animate__fadeInUp">
-                    <div class="index-section-header-head">
-                        <span>التقنيات التي نستخدمها</span>
-                        <h3>تقنياتنا الحديثة والمتطورة</h3>
-                    </div>
-                    <p class="text">تنمية العلامات التجارية من خلال الإبداع الجريء والاستراتيجي، مع التركيز على البحث عن
-                        طرق جديدة <span> لعرض محتوى المستخدم على الدعم الرقمي</span> وتصور الفنون المستقبلية.</p>
-                </div>
-
-                <div class="partners-slider-wrapper">
-                    <!-- First Row - Slides Right -->
-                    <div class="partners-slider-row mr-5">
-                        <div class="partners-slider-track slide-left">
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/01.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/02.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/03.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/04.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/05.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <!-- Duplicate for seamless loop -->
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/01.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/02.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/03.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/04.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/05.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Second Row - Slides Left -->
-                    <div class="partners-slider-row">
-                        <div class="partners-slider-track slide-right">
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/06.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/07.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/08.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/09.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/10.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <!-- Duplicate for seamless loop -->
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/06.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/07.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/08.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/09.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/10.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Third Row - Slides Right -->
-                    <div class="partners-slider-row">
-                        <div class="partners-slider-track slide-left">
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/11.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/12.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/13.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/14.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/15.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <!-- Duplicate for seamless loop -->
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/11.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/12.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/13.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/14.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                            <div class="partner-item">
-                                <div class="partner-logo">
-                                    <img src="assets/images/partner/15.webp" alt="Partner Logo">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
 
         <div class="services">
             <div class="patt1">
@@ -902,19 +603,16 @@
                         <div class="col-lg-4">
                             <div class="service-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
                                 <div class="service-head">
-                                    <h4>تـطـويـر الـمـواقـع الإلـكـتـرونـيـة</h4>
+                                    <h4>حلول الأعمال والاستشارات</h4>
                                     <span>1</span>
                                 </div>
                                 <div class="service-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
-                                        viewBox="0 0 24 24">
-                                        <path
-                                            d="m19.5,1H4.5C2.019,1,0,3.019,0,5.5v13c0,2.481,2.019,4.5,4.5,4.5h15c2.481,0,4.5-2.019,4.5-4.5V5.5c0-2.481-2.019-4.5-4.5-4.5Zm-15,1h15c1.93,0,3.5,1.57,3.5,3.5v2.5H1v-2.5c0-1.93,1.57-3.5,3.5-3.5Zm15,20H4.5c-1.93,0-3.5-1.57-3.5-3.5v-9.5h22v9.5c0,1.93-1.57,3.5-3.5,3.5ZM3,5c0-.552.448-1,1-1s1,.448,1,1-.448,1-1,1-1-.448-1-1Zm3,0c0-.552.448-1,1-1s1,.448,1,1-.448,1-1,1-1-.448-1-1Zm3,0c0-.552.448-1,1-1s1,.448,1,1-.448,1-1,1-1-.448-1-1Zm-.548,8.562l-.314,3.659c-.031.44-.337.779-.706.779-.244,0-.471-.151-.601-.4l-.831-1.6-.831,1.6c-.129.249-.356.4-.601.4-.368,0-.675-.339-.706-.779l-.314-3.659c-.026-.302.212-.562.515-.562.27,0,.494.207.516.477l.212,2.681.75-1.443c.193-.372.725-.372.918,0l.75,1.443.21-2.681c.021-.269.246-.477.516-.477h.002c.303,0,.541.26.515.562Zm12,0l-.314,3.659c-.031.44-.337.779-.706.779-.244,0-.471-.151-.601-.4l-.831-1.6-.831,1.6c-.129.249-.356.4-.601.4-.368,0-.675-.339-.706-.779l-.314-3.659c-.026-.302.212-.562.515-.562.27,0,.494.207.516.477l.212,2.681.75-1.443c.193-.372.725-.372.918,0l.75,1.443.21-2.681c.021-.269.246-.477.516-.477h.002c.303,0,.541.26.515.562Zm-6,0l-.314,3.659c-.031.44-.337.779-.706.779-.244,0-.471-.151-.601-.4l-.831-1.6-.831,1.6c-.129.249-.356.4-.601.4-.368,0-.675-.339-.706-.779l-.314-3.659c-.026-.302.212-.562.515-.562.27,0,.494.207.516.477l.212,2.681.75-1.443c.193-.372.725-.372.918,0l.75,1.443.21-2.681c.021-.269.246-.477.516-.477h.002c.303,0,.541.26.515.562Z" />
-                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24">
+                                        <path d="m19.5,4h-1.551c-.252-2.244-2.139-4-4.449-4h-3c-2.31,0-4.197,1.756-4.449,4h-1.551C2.019,4,0,6.019,0,8.5v11c0,2.481,2.019,4.5,4.5,4.5h15c2.481,0,4.5-2.019,4.5-4.5v-11c0-2.481-2.019-4.5-4.5-4.5ZM10.5,1h3c1.758,0,3.204,1.308,3.449,3H7.051c.245-1.692,1.691-3,3.449-3Zm-6,4h15c1.93,0,3.5,1.57,3.5,3.5v3.5H1v-3.5c0-1.93,1.57-3.5,3.5-3.5Zm15,18H4.5c-1.93,0-3.5-1.57-3.5-3.5v-6.5h10.5v1.5c0,.276.224.5.5.5s.5-.224.5-.5v-1.5h10.5v6.5c0,1.93-1.57,3.5-3.5,3.5Z"/>
+                                      </svg>
                                 </div>
                                 <div class="service-info">
-                                    <p>نقدم لك موقع مميز مع تصميم عصرى وجذاب ومتوافق مع محركات البحث نقدم لك موقع مميز
-                                        مع تصميم عصرى وجذاب ومتوافق مع محركات البحث</p>
+                                    <p>نقدم استشارات استراتيجية متخصصة وتحليلات أعمال دقيقة لمساعدتك في اتخاذ القرارات الصحيحة وتحسين أداء مؤسستك ووضع خطط تنمية مستدامة.</p>
                                 </div>
                                 <div class="service-link">
                                     <a class="header-btn" href="#"><span>استكشف ماذا نقدم</span>
@@ -930,19 +628,16 @@
                         <div class="col-lg-4">
                             <div class="service-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
                                 <div class="service-head">
-                                    <h4>تـطـويـر تـطـبـيـقـات الـمـوبـايـل</h4>
+                                    <h4>خدمات النمو والتوسع</h4>
                                     <span>2</span>
                                 </div>
                                 <div class="service-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
-                                        viewBox="0 0 24 24" width="512" height="512">
-                                        <path
-                                            d="M15.5,24h-7c-2.481,0-4.5-2.019-4.5-4.5V4.5C4,2.019,6.019,0,8.5,0h7c2.481,0,4.5,2.019,4.5,4.5v15c0,2.481-2.019,4.5-4.5,4.5ZM8.5,1c-1.93,0-3.5,1.57-3.5,3.5v15c0,1.93,1.57,3.5,3.5,3.5h7c1.93,0,3.5-1.57,3.5-3.5V4.5c0-1.93-1.57-3.5-3.5-3.5h-7Zm5.5,19.5c0-.276-.224-.5-.5-.5h-3c-.276,0-.5,.224-.5,.5s.224,.5,.5,.5h3c.276,0,.5-.224,.5-.5Z" />
-                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24">
+                                        <path d="m24,23.524c0,.276-.225.5-.5.5h0l-20-.024c-1.929,0-3.5-1.57-3.5-3.5V.5C0,.224.224,0,.5,0s.5.224.5.5v20c0,1.378,1.122,2.5,2.5,2.5l20.001.024c.275,0,.499.225.499.5ZM5,12.524v6.976c0,.276.224.5.5.5s.5-.224.5-.5v-6.976c0-.276-.224-.5-.5-.5s-.5.224-.5.5Zm5-2v8.976c0,.276.224.5.5.5s.5-.224.5-.5v-8.976c0-.276-.224-.5-.5-.5s-.5.224-.5.5Zm5,3v5.976c0,.276.224.5.5.5s.5-.224.5-.5v-5.976c0-.276-.224-.5-.5-.5s-.5.224-.5.5Zm5-4.024v10c0,.276.224.5.5.5s.5-.224.5-.5v-10c0-.276-.224-.5-.5-.5s-.5.224-.5.5Zm-15.5-.5c.128,0,.256-.049.354-.146l4.474-4.474c.371-.371.974-.371,1.345,0l2.948,2.949c.762.759,1.998.759,2.76,0L22.854.854c.195-.195.195-.512,0-.707s-.512-.195-.707,0l-6.474,6.474c-.371.371-.975.371-1.346,0l-2.948-2.948c-.761-.761-1.998-.761-2.759,0l-4.474,4.474c-.195.195-.195.512,0,.707.098.098.226.146.354.146Z"/>
+                                      </svg>
                                 </div>
                                 <div class="service-info">
-                                    <p>نقدم لك موقع مميز مع تصميم عصرى وجذاب ومتوافق مع محركات البحث نقدم لك موقع مميز
-                                        مع تصميم عصرى وجذاب ومتوافق مع محركات البحث</p>
+                                    <p>نساعدك على توسيع نطاق عملك وزيادة الحصة السوقية من خلال خطط نمو مدروسة وحلول تسويقية فعّالة وشراكات استراتيجية تدعم تطورك المستمر.</p>
                                 </div>
                                 <div class="service-link">
                                     <a class="header-btn" href="#"><span>استكشف ماذا نقدم</span>
@@ -958,19 +653,17 @@
                         <div class="col-lg-4">
                             <div class="service-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                                 <div class="service-head">
-                                    <h4>تـطـبـيـقـات سـطـح الـمـكـتـب</h4>
+                                    <h4>
+                                        الأنظمة الإدارية والمحاسبية</h4>
                                     <span>3</span>
                                 </div>
                                 <div class="service-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
-                                        viewBox="0 0 24 24">
-                                        <path
-                                            d="M19.5,1H4.5C2.019,1,0,3.019,0,5.5V14.5c0,2.481,2.019,4.5,4.5,4.5h7v3H6.5c-.276,0-.5,.224-.5,.5s.224,.5,.5,.5h11c.276,0,.5-.224,.5-.5s-.224-.5-.5-.5h-5v-3h7c2.481,0,4.5-2.019,4.5-4.5V5.5c0-2.481-2.019-4.5-4.5-4.5ZM4.5,2h15c1.93,0,3.5,1.57,3.5,3.5V14H1V5.5c0-1.93,1.57-3.5,3.5-3.5Zm15,16H4.5c-1.758,0-3.204-1.308-3.449-3H22.949c-.245,1.692-1.691,3-3.449,3Z" />
-                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24">
+                                        <path d="m3,17c.276,0,.5-.224.5-.5,0-.827.673-1.5,1.5-1.5h6.5v1.5c0,.276.224.5.5.5s.5-.224.5-.5v-1.5h6.5c.827,0,1.5.673,1.5,1.5,0,.276.224.5.5.5s.5-.224.5-.5c0-1.379-1.121-2.5-2.5-2.5h-6.5v-2.026c1.062-.108,2.071-.556,2.863-1.275l.631.368c.345.201.748.258,1.137.156.388-.102.712-.349.914-.695s.258-.75.155-1.137c-.102-.388-.348-.712-.694-.914l-.646-.377c.094-.384.14-.747.14-1.1s-.046-.716-.14-1.101l.646-.376c.714-.417.956-1.337.539-2.052-.416-.713-1.334-.958-2.051-.539l-.642.374c-.537-.488-1.166-.851-1.853-1.067v-.738c0-.827-.673-1.5-1.5-1.5s-1.5.673-1.5,1.5v.738c-.687.216-1.315.579-1.853,1.067l-.642-.374c-.346-.202-.75-.256-1.137-.155-.388.102-.712.349-.914.695s-.258.75-.155,1.137c.102.388.348.712.694.915l.646.376c-.094.385-.14.748-.14,1.101s.046.716.14,1.1l-.646.377c-.347.202-.593.527-.694.915-.103.387-.047.791.155,1.137s.526.593.914.695c.387.102.791.047,1.137-.156l.631-.368c.793.719,1.801,1.167,2.863,1.275v2.026h-6.5c-1.379,0-2.5,1.121-2.5,2.5,0,.276.224.5.5.5Zm6.08-7.267c-.098-.104-.23-.158-.365-.158-.087,0-.174.022-.252.068l-.962.561c-.116.068-.251.085-.378.052-.129-.034-.237-.116-.305-.231-.067-.116-.086-.25-.052-.379s.116-.237.231-.305l.979-.572c.202-.118.295-.359.225-.582-.138-.438-.202-.816-.202-1.187s.064-.749.202-1.188c.07-.223-.023-.464-.225-.582l-.979-.571c-.238-.139-.318-.445-.18-.684.138-.237.443-.319.684-.18l.972.567c.199.117.457.081.616-.089.55-.586,1.249-.989,2.021-1.165.228-.052.389-.254.389-.487v-1.12c0-.276.225-.5.5-.5s.5.224.5.5v1.12c0,.233.161.436.389.487.772.176,1.472.579,2.021,1.165.158.17.417.207.616.089l.972-.567c.114-.066.246-.086.379-.051.129.034.237.116.305.231.067.116.086.25.052.379s-.116.237-.231.304l-.979.571c-.201.118-.295.359-.225.582.138.439.202.817.202,1.188s-.064.749-.202,1.187c-.07.223.022.464.225.582l.979.572c.115.067.197.175.231.304s.016.264-.052.379c-.067.115-.176.197-.305.231-.127.032-.264.016-.379-.052l-.961-.561c-.199-.117-.457-.081-.617.09-.765.817-1.802,1.267-2.92,1.267s-2.155-.45-2.92-1.267Zm3.92,8.267h-2c-1.103,0-2,.897-2,2v2c0,1.103.897,2,2,2h2c1.103,0,2-.897,2-2v-2c0-1.103-.897-2-2-2Zm1,4c0,.552-.448,1-1,1h-2c-.552,0-1-.448-1-1v-2c0-.552.448-1,1-1h2c.552,0,1,.448,1,1v2Zm8-4h-2c-1.103,0-2,.897-2,2v2c0,1.103.897,2,2,2h2c1.103,0,2-.897,2-2v-2c0-1.103-.897-2-2-2Zm1,4c0,.552-.448,1-1,1h-2c-.552,0-1-.448-1-1v-2c0-.552.448-1,1-1h2c.552,0,1,.448,1,1v2Zm-19-4h-2c-1.103,0-2,.897-2,2v2c0,1.103.897,2,2,2h2c1.103,0,2-.897,2-2v-2c0-1.103-.897-2-2-2Zm1,4c0,.552-.448,1-1,1h-2c-.552,0-1-.448-1-1v-2c0-.552.448-1,1-1h2c.552,0,1,.448,1,1v2ZM14,7c0-1.103-.897-2-2-2s-2,.897-2,2,.897,2,2,2,2-.897,2-2Zm-3,0c0-.551.448-1,1-1s1,.449,1,1-.448,1-1,1-1-.449-1-1Z"/>
+                                      </svg>
                                 </div>
                                 <div class="service-info">
-                                    <p>نقدم لك موقع مميز مع تصميم عصرى وجذاب ومتوافق مع محركات البحث نقدم لك موقع مميز
-                                        مع تصميم عصرى وجذاب ومتوافق مع محركات البحث</p>
+                                    <p>نصمم وننفذ أنظمة إدارية ومحاسبية متكاملة تسهّل إدارة الموارد والمخزون والموظفين والميزانيات بدقة واحترافية مع تقارير وتحليلات فورية.</p>
                                 </div>
                                 <div class="service-link">
                                     <a class="header-btn" href="#"><span>استكشف ماذا نقدم</span>
@@ -986,19 +679,14 @@
                         <div class="col-lg-4">
                             <div class="service-card">
                                 <div class="service-head">
-                                    <h4>تـصـمـيـمـات الـجـرافـيـك</h4>
+                                    <h4>الحلول الرقمية والبرمجية</h4>
                                     <span>4</span>
                                 </div>
                                 <div class="service-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
-                                        viewBox="0 0 24 24">
-                                        <path
-                                            d="m20.5,0H3.5C1.57,0,0,1.57,0,3.5v9c0,2.481,2.019,4.5,4.5,4.5h4c.276,0,.5.224.5.5v3.5c0,1.654,1.346,3,3,3s3-1.346,3-3v-3.5c0-.276.224-.5.5-.5h4c2.481,0,4.5-2.019,4.5-4.5V3.5c0-1.93-1.57-3.5-3.5-3.5ZM3.5,1h7.5v2.5c0,.276.224.5.5.5s.5-.224.5-.5V1h3v4.5c0,.276.224.5.5.5s.5-.224.5-.5V1h3v6.5c0,.276.224.5.5.5s.5-.224.5-.5V1h.5c1.378,0,2.5,1.122,2.5,2.5v7.5H1V3.5c0-1.378,1.122-2.5,2.5-2.5Zm16,15h-4c-.827,0-1.5.673-1.5,1.5v3.5c0,1.103-.897,2-2,2s-2-.897-2-2v-3.5c0-.827-.673-1.5-1.5-1.5h-4c-1.93,0-3.5-1.57-3.5-3.5v-.5h22v.5c0,1.93-1.57,3.5-3.5,3.5Z" />
-                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 24 24" data-name="Layer 1"><path d="m7.339 14.699c-.215.216-.34.52-.339.842 0 .321.128.624.357.851l2.478 2.237c.205.186.221.501.036.706-.185.206-.502.22-.706.036l-2.494-2.253c-.437-.431-.669-.984-.671-1.574s.227-1.146.645-1.563l2.515-2.346c.201-.188.519-.177.706.024.188.202.178.519-.024.706l-2.502 2.334zm16.661-9.199v13c0 2.481-2.019 4.5-4.5 4.5h-15c-2.481 0-4.5-2.019-4.5-4.5v-13c0-2.481 2.019-4.5 4.5-4.5h15c2.481 0 4.5 2.019 4.5 4.5zm-23 0v2.5h22v-2.5c0-1.93-1.57-3.5-3.5-3.5h-15c-1.93 0-3.5 1.57-3.5 3.5zm22 13v-9.5h-22v9.5c0 1.93 1.57 3.5 3.5 3.5h15c1.93 0 3.5-1.57 3.5-3.5zm-19-12.5c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm3 0c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm3 0c.552 0 1-.448 1-1s-.448-1-1-1-1 .448-1 1 .448 1 1 1zm4.841 5.635c-.2-.188-.519-.177-.706.024-.188.202-.178.519.024.706l2.489 2.322c.228.228.353.531.352.854 0 .321-.128.624-.341.835l-2.494 2.253c-.205.186-.221.501-.036.706.185.206.501.22.706.036l2.511-2.269c.42-.415.652-.969.654-1.559s-.227-1.146-.657-1.575l-2.502-2.334z"/></svg>
                                 </div>
                                 <div class="service-info">
-                                    <p>نقدم لك موقع مميز مع تصميم عصرى وجذاب ومتوافق مع محركات البحث نقدم لك موقع مميز
-                                        مع تصميم عصرى وجذاب ومتوافق مع محركات البحث</p>
+                                    <p>نطور مواقع إلكترونية وتطبيقات وحلول برمجية مخصصة بأحدث التقنيات لتحويل أفكارك إلى منتجات رقمية احترافية تلبي احتياجات المستخدمين والسوق.</p>
                                 </div>
                                 <div class="service-link">
                                     <a class="header-btn" href="#"><span>استكشف ماذا نقدم</span>
@@ -1014,19 +702,14 @@
                         <div class="col-lg-4">
                             <div class="service-card">
                                 <div class="service-head">
-                                    <h4>تـحـسـيـن مـحـركـات الـبـحـث</h4>
+                                    <h4>الذكاء الاصطناعي (AI)</h4>
                                     <span>5</span>
                                 </div>
                                 <div class="service-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
-                                        viewBox="0 0 24 24">
-                                        <path
-                                            d="m19.5,1H4.5C2.019,1,0,3.019,0,5.5v13c0,2.481,2.019,4.5,4.5,4.5h2c.276,0,.5-.224.5-.5s-.224-.5-.5-.5h-2c-1.93,0-3.5-1.57-3.5-3.5v-9.5h22v9.5c0,1.93-1.57,3.5-3.5,3.5h-2c-.276,0-.5.224-.5.5s.224.5.5.5h2c2.481,0,4.5-2.019,4.5-4.5V5.5c0-2.481-2.019-4.5-4.5-4.5ZM1,8v-2.5c0-1.93,1.57-3.5,3.5-3.5h15c1.93,0,3.5,1.57,3.5,3.5v2.5H1Zm4-3c0,.552-.448,1-1,1s-1-.448-1-1,.448-1,1-1,1,.448,1,1Zm3,0c0,.552-.448,1-1,1s-1-.448-1-1,.448-1,1-1,1,.448,1,1Zm3,0c0,.552-.448,1-1,1s-1-.448-1-1,.448-1,1-1,1,.448,1,1Zm7,10.5c0,1.893-.868,3.635-2.38,4.779-.394.299-.62.738-.62,1.206v2.015c0,.276-.224.5-.5.5s-.5-.224-.5-.5v-2.015c0-.783.37-1.514,1.016-2.003,1.261-.954,1.984-2.406,1.984-3.982,0-1.252-.467-2.449-1.313-3.373-.175-.19-.384-.13-.444-.105-.073.028-.242.12-.242.356v1.479c0,1.602-1.183,2.976-2.692,3.127-.849.089-1.693-.191-2.32-.76-.627-.567-.987-1.379-.987-2.225v-1.622c0-.236-.169-.328-.242-.356-.061-.023-.269-.084-.444.105-.847.924-1.314,2.121-1.314,3.373,0,1.576.723,3.028,1.984,3.982.646.489,1.016,1.22,1.016,2.003v2.015c0,.276-.224.5-.5.5s-.5-.224-.5-.5v-2.015c0-.468-.226-.907-.62-1.206-1.512-1.145-2.38-2.887-2.38-4.779,0-1.503.56-2.94,1.577-4.049.396-.432,1.001-.574,1.544-.361.534.208.879.713.879,1.288v1.622c0,.564.24,1.104.658,1.483.425.384.975.565,1.55.507,1.005-.102,1.792-1.038,1.792-2.133v-1.479c0-.575.345-1.08.879-1.288.543-.212,1.148-.07,1.544.361,1.017,1.108,1.577,2.546,1.577,4.049Z" />
-                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 24 24" data-name="Layer 1"><path d="m21 21.5v2c0 .276-.224.5-.5.5s-.5-.224-.5-.5v-2c0-1.93-1.57-3.5-3.5-3.5h-9c-1.93 0-3.5 1.57-3.5 3.5v2c0 .276-.224.5-.5.5s-.5-.224-.5-.5v-2c0-2.481 2.019-4.5 4.5-4.5h9c2.481 0 4.5 2.019 4.5 4.5zm1-14v3c0 .827-.673 1.5-1.5 1.5h-.776c-.621 1.742-2.271 3-4.224 3h-7c-1.953 0-3.602-1.258-4.224-3h-.776c-.827 0-1.5-.673-1.5-1.5v-3c0-.827.673-1.5 1.5-1.5h.551c.252-2.244 2.139-4 4.449-4h3v-1.5c0-.276.224-.5.5-.5s.5.224.5.5v1.5h3c2.31 0 4.197 1.756 4.449 4h.551c.827 0 1.5.673 1.5 1.5zm-17.949 3.5c-.019-.166-.051-.329-.051-.5v-3.5h-.5c-.275 0-.5.225-.5.5v3c0 .275.225.5.5.5zm14.949-.5v-4c0-1.93-1.57-3.5-3.5-3.5h-7c-1.93 0-3.5 1.57-3.5 3.5v4c0 1.93 1.57 3.5 3.5 3.5h7c1.93 0 3.5-1.57 3.5-3.5zm2-3c0-.275-.225-.5-.5-.5h-.5v3.5c0 .171-.032.334-.051.5h.551c.275 0 .5-.225.5-.5zm-6-2.5c-.276 0-.5.224-.5.5v6c0 .276.224.5.5.5s.5-.224.5-.5v-6c0-.276-.224-.5-.5-.5zm-2.013 6.402c.062.269-.104.537-.374.601-.263.062-.538-.102-.601-.374l-.38-1.629h-2.265l-.38 1.629c-.063.27-.328.439-.601.374-.27-.063-.437-.332-.374-.601l1.269-5.434c.136-.58.626-.969 1.219-.969s1.083.389 1.219.968l1.269 5.435zm-1.588-2.402-.655-2.805c-.039-.17-.17-.195-.244-.195s-.205.025-.244.196l-.655 2.804z"/></svg>
                                 </div>
                                 <div class="service-info">
-                                    <p>نقدم لك موقع مميز مع تصميم عصرى وجذاب ومتوافق مع محركات البحث نقدم لك موقع مميز
-                                        مع تصميم عصرى وجذاب ومتوافق مع محركات البحث</p>
+                                    <p>ندمج تقنيات الذكاء الاصطناعي في عملياتك لتحسين الكفاءة والتحليلات التلقائية والدعم الذكي والروبوتات البرمجية التي توفر الوقت وتدعم اتخاذ القرار.</p>
                                 </div>
                                 <div class="service-link">
                                     <a class="header-btn" href="#"><span>استكشف ماذا نقدم</span>
@@ -1042,19 +725,16 @@
                         <div class="col-lg-4">
                             <div class="service-card">
                                 <div class="service-head">
-                                    <h4>الـتـسـويـق الإلـكـتـرونـي</h4>
+                                    <h4>خدمات تكميلية ومساندة</h4>
                                     <span>6</span>
                                 </div>
                                 <div class="service-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1"
-                                        viewBox="0 0 24 24">
-                                        <path
-                                            d="m17.5,0c-.276,0-.5.224-.5.5,0,3.444-2.43,5.5-6.5,5.5H3.5c-1.93,0-3.5,1.57-3.5,3.5v2c0,1.158.565,2.186,1.435,2.824l3.608,8.054c.438.985,1.417,1.622,2.496,1.622.843,0,1.621-.422,2.081-1.13.459-.707.529-1.59.185-2.365l-2.525-5.505h3.221c4.07,0,6.5,2.056,6.5,5.5,0,.276.224.5.5.5s.5-.224.5-.5V.5c0-.276-.224-.5-.5-.5Zm-8.607,20.916c.208.467.167.98-.111,1.409-.279.429-.731.675-1.243.675-.684,0-1.305-.403-1.583-1.029l-3.155-7.041c.226.046.46.07.699.07h2.679l2.714,5.916Zm8.107-4.014c-1.217-1.846-3.486-2.902-6.5-2.902H3.5c-1.378,0-2.5-1.121-2.5-2.5v-2c0-1.379,1.122-2.5,2.5-2.5h7c3.014,0,5.283-1.057,6.5-2.902v12.805Zm6.947-1.179c-.088.175-.265.276-.447.276-.075,0-.151-.017-.224-.053l-2-1c-.247-.124-.347-.424-.224-.671.125-.247.424-.346.671-.224l2,1c.247.124.347.424.224.671Zm-2.895-9c-.123-.247-.023-.547.224-.671l2-1c.247-.123.547-.023.671.224.123.247.023.547-.224.671l-2,1c-.072.036-.148.053-.224.053-.183,0-.359-.102-.447-.276Zm-.053,3.776c0-.276.224-.5.5-.5h2c.276,0,.5.224.5.5s-.224.5-.5.5h-2c-.276,0-.5-.224-.5-.5Z" />
-                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24">
+                                        <path d="M7,0h-3C1.794,0,0,1.794,0,4v3c0,2.206,1.794,4,4,4h3c2.206,0,4-1.794,4-4v-3C11,1.794,9.206,0,7,0Zm3,7c0,1.654-1.346,3-3,3h-3c-1.654,0-3-1.346-3-3v-3c0-1.654,1.346-3,3-3h3c1.654,0,3,1.346,3,3v3Zm-3,6h-3c-2.206,0-4,1.794-4,4v3c0,2.206,1.794,4,4,4h3c2.206,0,4-1.794,4-4v-3c0-2.206-1.794-4-4-4Zm3,7c0,1.654-1.346,3-3,3h-3c-1.654,0-3-1.346-3-3v-3c0-1.654,1.346-3,3-3h3c1.654,0,3,1.346,3,3v3Zm10-7h-3c-2.206,0-4,1.794-4,4v3c0,2.206,1.794,4,4,4h3c2.206,0,4-1.794,4-4v-3c0-2.206-1.794-4-4-4Zm3,7c0,1.654-1.346,3-3,3h-3c-1.654,0-3-1.346-3-3v-3c0-1.654,1.346-3,3-3h3c1.654,0,3,1.346,3,3v3ZM13,5.5c0-.276,.224-.5,.5-.5h4.5V.5c0-.276,.224-.5,.5-.5s.5,.224,.5,.5V5h4.5c.276,0,.5,.224,.5,.5s-.224,.5-.5,.5h-4.5v4.5c0,.276-.224,.5-.5,.5s-.5-.224-.5-.5V6h-4.5c-.276,0-.5-.224-.5-.5Z"/>
+                                      </svg>
                                 </div>
                                 <div class="service-info">
-                                    <p>نقدم لك موقع مميز مع تصميم عصرى وجذاب ومتوافق مع محركات البحث نقدم لك موقع مميز
-                                        مع تصميم عصرى وجذاب ومتوافق مع محركات البحث</p>
+                                    <p>نوفر دعمًا فنيًا مستمرًا وصيانة وتحديثات وخدمات استضافة وتدريب الفرق لضمان استمرارية عمل حلولكم بأفضل أداء وأمان.</p>
                                 </div>
                                 <div class="service-link">
                                     <a class="header-btn" href="#"><span>استكشف ماذا نقدم</span>
@@ -1073,7 +753,130 @@
             </div>
         </div>
 
-        <div class="nums">
+        <!-- مستشارك الخاص Section -->
+        <section class="consultant-section">
+            <div class="container">
+                <div class="index-section-header-center text-center mb-5 wow animate__animated animate__fadeInUp">
+                    <div class="index-section-header-head">
+                        <span class="pretitle">مستشارك الخاص</span>
+                        <h3>احجز استشارتك مع نخبة من الخبراء</h3>
+                        <p class="text">سواء كنت تبحث عن تطوير استراتيجية عملك، تحسين العمليات التقنية، أو دخول أسواق جديدة، خبراؤنا هنا لتقديم المشورة الدقيقة والمخصصة لك.</p>
+                    </div>
+                </div>
+
+                <div class="consultant-features wow animate__animated animate__fadeInUp">
+                    <ul class="consultant-features-list list-unstyled">
+                        <li>جلسة تشخيص أولية مجانية</li>
+                        <li>خطط عمل مخصصة لاحتياجاتك</li>
+                        <li>متابعة دورية لضمان النتائج</li>
+                    </ul>
+                    <a href="#" class="header-btn consultant-cta">
+                        <span>تواصل معنا لحجز موعد</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z"></path></svg>
+                    </a>
+                </div>
+
+                <div class="consultant-experts row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="consultant-expert-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                            <div class="consultant-expert-badge">Expert</div>
+                            <figure class="consultant-expert-avatar" style="background-image: url(assets/images/avatars/01.webp)"></figure>
+                            <h4 class="consultant-expert-name">د. أحمد العلي</h4>
+                            <p class="consultant-expert-title">خبير التخطيط الاستراتيجي - 20 سنة خبرة</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="consultant-expert-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                            <div class="consultant-expert-badge">Expert</div>
+                            <figure class="consultant-expert-avatar" style="background-image: url(assets/images/avatars/02.webp)"></figure>
+                            <h4 class="consultant-expert-name">أ. سارة محمد</h4>
+                            <p class="consultant-expert-title">مستشارة التحول الرقمي و Odoo</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="consultant-expert-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                            <div class="consultant-expert-badge">Expert</div>
+                            <figure class="consultant-expert-avatar" style="background-image: url(assets/images/avatars/01.webp)"></figure>
+                            <h4 class="consultant-expert-name">م. خالد عمر</h4>
+                            <p class="consultant-expert-title">خبير الذكاء الاصطناعي والأتمتة</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="consultant-more text-center wow animate__animated animate__fadeInUp">
+                    <a href="#" class="consultant-more-link">عرض جميع الخبراء المتاحين</a>
+                </div>
+            </div>
+        </section>
+
+                <!-- أنظمة تخطيط الموارد العالمية (ERP) Section -->
+                <section class="erp-section">
+                    <div class="container">
+                        <div class="index-section-header-center text-center mb-5 wow animate__animated animate__fadeInUp">
+                            <div class="index-section-header-head">
+                                <span class="pretitle">الأنظمة الإدارية</span>
+                                <h3>أنظمة تخطيط الموارد العالمية (ERP)</h3>
+                                <p class="text">نقدم لك أفضل الحلول العالمية لإدارة مؤسستك بكفاءة وفعالية</p>
+                            </div>
+                        </div>
+        
+                        <div class="erp-cards row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="erp-card erp-card--odoo wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                                    <div class="erp-card-badge">Odoo</div>
+                                    <h4 class="erp-card-title">Odoo: مرونة بلا حدود</h4>
+                                    <p class="erp-card-subtitle">الخيار الأمثل للشركات المتوسطة والكبيرة</p>
+                                    <p class="erp-card-desc">نظام متكامل وموديلار (Modular) يتيح لك البدء بما تحتاجه فقط والتوسع لاحقاً. يتميز بواجهة سهلة وتكلفة مناسبة، مع توافق كامل مع متطلبات الفوترة الإلكترونية في المملكة.</p>
+                                    <ul class="erp-card-features list-unstyled">
+                                        <li>إدارة شاملة (مبيعات، مخزون، محاسبة، HR).</li>
+                                        <li>مفتوح المصدر وقابل للتخصيص بالكامل.</li>
+                                        <li>تطبيق جوال قوي وسهل الاستخدام.</li>
+                                    </ul>
+                                    <a href="#" class="header-btn erp-card-cta">
+                                        <span>احجز ديمو Odoo</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="erp-card erp-card--sap wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                                    <div class="erp-card-badge">SAP</div>
+                                    <h4 class="erp-card-title">SAP: الريادة العالمية</h4>
+                                    <p class="erp-card-subtitle">الخيار الأول للمؤسسات الضخمة</p>
+                                    <p class="erp-card-desc">النظام الرائد عالمياً للشركات الكبرى. يوفر أفضل الممارسات الصناعية (Best Practices) وقدرات تحليلية فائقة، مما يضمن استقرار العمليات وقابلية التوسع غير المحدودة.</p>
+                                    <ul class="erp-card-features list-unstyled">
+                                        <li>معايير عالمية لإدارة العمليات.</li>
+                                        <li>تقارير وتحليلات فورية (SAP HANA).</li>
+                                        <li>أمان وموثوقية عالية جداً.</li>
+                                    </ul>
+                                    <a href="#" class="header-btn erp-card-cta">
+                                        <span>استشارة SAP</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="erp-card erp-card--oracle wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                                    <div class="erp-card-badge">Oracle</div>
+                                    <h4 class="erp-card-title">Oracle: بنية تحتية قوية</h4>
+                                    <p class="erp-card-subtitle">قوة السحابة والبيانات</p>
+                                    <p class="erp-card-desc">حلول سحابية متكاملة (Cloud ERP) تعتمد على أقوى قواعد البيانات في العالم. مثالية للشركات التي تبحث عن الأمان، الأداء العالي، والتكامل المالي العميق.</p>
+                                    <ul class="erp-card-features list-unstyled">
+                                        <li>إدارة مالية متقدمة وسلاسل إمداد.</li>
+                                        <li>بنية سحابية مرنة وآمنة.</li>
+                                        <li>دعم قوي للذكاء الاصطناعي والتحليلات.</li>
+                                    </ul>
+                                    <a href="#" class="header-btn erp-card-cta">
+                                        <span>استشارة Oracle</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        <!-- <div class="nums">
             <div class="container">
                 <div class="row">
 
@@ -1156,9 +959,9 @@
 
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="projects">
+        <!-- <div class="projects">
             <div class="container">
 
                 <div class="index-section-header-center wow animate__animated animate__fadeInUp">
@@ -1310,9 +1113,9 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
 
-        <div class="testimonilas">
+        <div class="testimonilas" id="testimonials">
             <div class="container">
                 <div class="tes-container">
 
@@ -1330,32 +1133,20 @@
                         <div class="row">
 
                             <div class="col-lg-4">
-                                <div class="tes-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-                                    <!-- <div class="patt1">
-                                        <img src="assets/images/logos/icon.png" alt="icon">
-                                    </div> -->
-                                    <div class="test-scocre">
-                                        <h3>4.9</h3>
-                                        <span>/</span>
-                                        <h4>5</h4>
+                                <div class="review-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                                    <div class="review-card-head">
+                                        <figure style="background-image: url(assets/images/avatars/01.webp)"></figure>
+                                        <div class="review-card-head-info">
+                                            <h3>محمد السعيد</h3>
+                                            <span>مدير التحول الرقمي - مجموعة شركات الراجحي</span>
+                                        </div>
                                     </div>
-                                    <p class="text">تنمية العلامات التجارية من خلال الإبداع الجريء والاستراتيجي، مع
-                                        التركيز على
-                                        البحث عن
-                                        طرق جديدة <span> لعرض محتوى المستخدم على الدعم الرقمي</span> وتصور الفنون
-                                        المستقبلية.</p>
-                                    <div class="tes-logo-container">
-                                        <a href="../index.html">
-                                            <img class="main-logo" src="assets/images/logos/icon-w.png" alt="" />
-                                            <span>نــــــــــــــــجــــــــــــــــد .<br> لـحـــلـــول الأعــمـال .</span>
-                                        </a>
-                                    </div>
-                                    <div class="tes-team">
-                                        <img src="assets/images/tes-team.png" alt="">
-                                    </div>
-                                    <div class="tes-stars">
-                                        <img src="assets/images/stars.png" alt="">
-                                        <span>شركة موثقة من العملاء حول العالم</span>
+                                    <div class="review-card-content">
+                                        <h4>استشارات التحول المؤسسي </h4>
+                                        <p>تعاملنا مع نجد لحلول الأعمال في مشروع إعادة هيكلة الإدارات وتحسين الجودة. الفريق قدم رؤية واضحة ودعمًا عمليًا من اليوم الأول حتى التطبيق. النتائج ظهرت خلال أشهر قليلة من حيث الكفاءة والانضباط التشغيلي. شركاء موثوقون.</p>
+                                        <div class="q-icon">
+                                            ,,
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1399,6 +1190,15 @@
                             </div>
 
                         </div>
+                    </div>
+
+                    <div class="reviews-more-wrapper text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                        <a href="#testimonials" class="header-btn reviews-more-btn">
+                            <span>عرض المزيد من الآراء</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z"/>
+                            </svg>
+                        </a>
                     </div>
 
                 </div>
@@ -1478,7 +1278,8 @@
                         <h2 class="cta-title">خطوتك القادمة نحو النجاح</h2>
                         <p class="cta-description">احصل على استشارة مجانية وتقييم شامل لمشروعك. املأ النموذج أدناه وسنتواصل معك خلال 24 ساعة</p>
                     </div>
-                    <div class="cta-form-wrapper">
+                    <div class="cta-two-col">
+                        <div class="cta-form-wrapper">
                         <form class="cta-form" action="#" method="POST">
                             <div class="form-row">
                                 <div class="form-group">
@@ -1513,6 +1314,28 @@
                                 </svg>
                             </button>
                         </form>
+                        </div>
+                        <div class="cta-contact-left">
+                            <div class="cta-map-wrap">
+                                <iframe class="cta-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.0!2d46.7!3d24.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDQyJzAwLjAiTiA0NsKwNDInMDAuMCJF!5e0!3m2!1sen!2ssa!4v1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="موقعنا على الخريطة"></iframe>
+                            </div>
+                            <div class="d-flex">
+                                <div class="cta-contact-item">
+                                    <span class="cta-contact-icon"><i class="fas fa-envelope"></i></span>
+                                    <a href="mailto:info@example.com" class="cta-contact-link">info@example.com</a>
+                                </div>
+                                <div class="cta-contact-item">
+                                    <span class="cta-contact-icon"><i class="fas fa-phone-alt"></i></span>
+                                    <a href="tel:+966500000000" class="cta-contact-link">+966 50 000 0000</a>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="cta-contact-item">
+                                    <span class="cta-contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                    <span class="cta-contact-text">الرياض، المملكة العربية السعودية</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1525,129 +1348,135 @@
 
         <div class="footer-container">
             <div class="container">
+                <div class="row">
 
-                <div class="upper-footer">
-                    <div class="patt1">
-                        <img src="assets/images/patt1.svg" alt="pattern">
-                    </div>
-                    <div class="footer-info wow animate__animated animate__fadeInUp">
-                        <div class="footer-logo">
-
-                            <div class="nav-logo-container">
-                                <a href="index.html">
-                                    <img class="main-logo" src="assets/images/logos/logo-dark.png" alt="" />
-                                    <span>لـحـــلـــول الأعــمـال .</span>
-                                </a>
-                            </div>
-
-                            <div class="nav-mobile-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
-                                </svg>
-                            </div>
-
-
-                        </div>
-                        <div class="footer-info-text">
-                            <p>تُمثل نجد المتكاملة نهجًا احترافيًا متكاملًا في مجال المقاولات. نجمع بين الخبرة الهندسية والكفاءة التشغيلية .</p>
-                        </div>
-                    </div>
-
-                    <div class="footer-contacts">
-                        <div class="row">
-
-                            <div class="col-lg-4">
-                                <div class="footer-contacts-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-                                    <a href="#">السعودية - الرياض - شارع الخليفة</a>
-                                    <p>مقر الشركة الوحيد في السعودية</p>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <div class="footer-contacts-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-                                    <a href="#" style="direction: ltr;">(+20) 1007056732</a>
-                                    <p>تواصل معنا للدعم & الاستشارات 24/7</p>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <div class="footer-contacts-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
-                                    <a href="#">info@nagd.com</a>
-                                    <p>يتم الرد في اقل من 12 ساعة</p>
-                                </div>
-                            </div>
+                    <div class="col-lg-3 col-md-6 col-r p-0">
+                        <div class="footer-col">
+                            <div class="Footer-head"><a href="#" class="footer-logo"><img
+                                        src="assets/images/logos/logo.png" alt=""> </a></div>
+                            <p class="footer-address">نجد لحلول الأعمال شركة سعودية متخصصة في تقديم الاستشارات والتحول المؤسسي، نصمم حلولاً متكاملة تدعم نمو الشركات وتساهم في بناء فرق عمل قادرة على المنافسة وتسريع الإنجاز.
+                            </p>
 
                         </div>
                     </div>
-                </div>
 
-                <div class="lower-footer">
-                    <div class="row">
-
-                        <div class="col-lg-4">
-                            <div class="footer-lower-card wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-                                <h3>ماذا عن نجد لحلول الأعمال</h3>
-                                <p>تُمثل نجد المتكاملة نهجًا احترافيًا متكاملًا في مجال المقاولات. نجمع بين الخبرة الهندسية والكفاءة التشغيلية .</p>
-                                <div class="footer-social-links">
-                                    <a href="#">FACEBOOK</a>
-                                    <a href="#">INSTAGRAM</a>
-                                    <a href="#">TIKTOK</a>
-                                    <a href="#">LINKEDIN</a>
-                                </div>
-                            </div>
+                    <div class="col-lg-2 col-md-6 text-center col-r p-0">
+                        <div class="footer-col">
+                            <div class="Footer-head"><a href="#">روابط سريعة</a></div>
+                            <ul class="list-unstyled">
+                                <li><a href="#hero">نظرة عامة</a></li>
+                                <li><a href="#vision">رؤيتنا</a></li>
+                                <li><a href="#partners">شركاؤنا</a></li>
+                                <li><a href="#testimonials">آراء عملائنا</a></li>
+                                <li><a href="#contact">طلب استشارة</a></li>
+                            </ul>
                         </div>
+                    </div>
 
-                        <div class="col-lg-4">
-                            <div class="footer-lower-card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
-                                <h2>مـجـالك الـتـجاري <br> يـعـتـبـر مـهـمـتـنـا</h2>
-                                <a class="footer-btn" href="#"><span>احجز استشارتك الآن</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </div>
+                    <div class="col-lg-2 col-md-6 text-center col-r p-0">
+                        <div class="footer-col">
+                            <div class="Footer-head"><a href="#">حلولنا الأساسية</a></div>
+                            <ul class="list-unstyled">
+                                <li><a href="#strategy">استراتيجيات النمو والتوسع</a></li>
+                                <li><a href="#digital">التحول الرقمي وبناء الأنظمة</a></li>
+                                <li><a href="#pmo">مكاتب إدارة المشاريع PMO</a></li>
+                                <li><a href="#marketing">التسويق وتطوير الهوية</a></li>
+                                <li><a href="#training">تأهيل الفرق وتمكين القادة</a></li>
+                            </ul>
                         </div>
+                    </div>
 
-                        <div class="col-lg-4">
-                            <div class="footer-lower-card wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
-                                <h3>انضم الي قائمتنا الإخبارية</h3>
-                                <p>انضم إلى نشرتنا الإخبارية للبقاء على اطلاع على النصائح الجديدة والبرامج التعليمية
-                                    والمشاريع والمنتجات والاستثمارات!</p>
-                                <div class="newsletter-form">
-                                    <form action="">
-                                        <div class="form-group">
-                                            <input class="search-input" type="text" class="form-control"
-                                                placeholder=" البريد الإلكترونى" />
-                                            <div class="search-icon">
-                                                <button type="submit">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                        fill="currentColor">
-                                                        <path
-                                                            d="M22.0003 13.0001L22.0004 11.0002L5.82845 11.0002L9.77817 7.05044L8.36396 5.63623L2 12.0002L8.36396 18.3642L9.77817 16.9499L5.8284 13.0002L22.0003 13.0001Z">
-                                                        </path>
-                                                    </svg>
-                                                </button>
-                                            </div>
+                    <div class="col-lg-3 col-md-6 text-center col-r p-0">
+                        <div class="footer-col">
+                            <div class="Footer-head"><a href="#">التواصل</a></div>
+                            <ul class="list-unstyled contact-info">
+                                <li>
+                                    <p>الرياض، المملكة العربية السعودية</p>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@najd.com"><p class="p-email">info@najd.com</p></a>
+                                </li>
+                                <li>
+                                    <a href="tel:+96658478889">+96658478889</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-2 col-md-6 text-center col-r p-0">
+                        <div class="footer-col">
+                            <div class="Footer-head"><a href="#">القائمة البريدية</a></div>
+                            <div class="nav-actions">
+                                <form action="">
+                                    <div class="form-group">
+                                        <input class="search-input" type="text" class="form-control"
+                                            placeholder=" البريد الإلكترونى" />
+                                        <div class="search-icon">
+                                            <button type="submit">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                    fill="currentColor">
+                                                    <path
+                                                        d="M3.5 1.34558C3.58425 1.34558 3.66714 1.36687 3.74096 1.40747L22.2034 11.5618C22.4454 11.6949 22.5337 11.9989 22.4006 12.2409C22.3549 12.324 22.2865 12.3924 22.2034 12.4381L3.74096 22.5924C3.499 22.7255 3.19497 22.6372 3.06189 22.3953C3.02129 22.3214 3 22.2386 3 22.1543V1.84558C3 1.56944 3.22386 1.34558 3.5 1.34558ZM5 4.38249V10.9999H10V12.9999H5V19.6174L18.8499 11.9999L5 4.38249Z">
+                                                    </path>
+                                                </svg>
+                                            </button>
                                         </div>
-                                    </form>
-                                </div>
+                                    </div>
+                                </form>
+
+                                <ul class="list-unstyled d-flex social-icons">
+                                    <li><a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z">
+                                                </path>
+                                            </svg>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z">
+                                                </path>
+                                            </svg>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z">
+                                                </path>
+                                            </svg>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z">
+                                                </path>
+                                            </svg>
+                                        </a></li>
+                                </ul>
                             </div>
                         </div>
-
                     </div>
-                </div>
 
-                <div class="copyrights">
-                    <p>جميع الحقوق محفوظة &copy; 2026 <span>نجد لحلول الأعمال</span></p>
-                    <ul class="list-unstyled">
-                        <li><a href="#">الشروط والأحكام</a></li>
-                        <li><a href="#">سياسة الخصوصية</a></li>
-                    </ul>
                 </div>
+            </div>
+        </div>
 
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12 order-2 order-md-1 text-center">
+                        <p class="copy text-center">All Rights Recived 2026 &copy; <a href="menamedia.io">نجد لحلول الأعمال</a>
+                        </p>
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -1727,6 +1556,115 @@
             });
 
 
+        });
+    </script>
+
+    <script>
+        // Mega Menu Toggle Function
+        function toggleMegaMenu() {
+            const megaMenu = document.getElementById('megaMenu');
+            const megaMenuAdmin = document.getElementById('megaMenuAdmin');
+            const megaMenuItem = megaMenu ? megaMenu.closest('.mega-menu-item') : null;
+            const megaMenuItemAdmin = megaMenuAdmin ? megaMenuAdmin.closest('.mega-menu-item') : null;
+            
+            if (megaMenu) {
+                megaMenu.classList.toggle('active');
+                // Update parent class for arrow rotation
+                if (megaMenuItem) {
+                    if (megaMenu.classList.contains('active')) {
+                        megaMenuItem.classList.add('menu-active');
+                    } else {
+                        megaMenuItem.classList.remove('menu-active');
+                    }
+                }
+            }
+            // Close other mega menu if open
+            if (megaMenuAdmin && megaMenuAdmin.classList.contains('active')) {
+                megaMenuAdmin.classList.remove('active');
+                if (megaMenuItemAdmin) {
+                    megaMenuItemAdmin.classList.remove('menu-active');
+                }
+            }
+        }
+
+        // Mega Menu Admin Toggle Function
+        function toggleMegaMenuAdmin() {
+            const megaMenuAdmin = document.getElementById('megaMenuAdmin');
+            const megaMenu = document.getElementById('megaMenu');
+            const megaMenuItemAdmin = megaMenuAdmin ? megaMenuAdmin.closest('.mega-menu-item') : null;
+            const megaMenuItem = megaMenu ? megaMenu.closest('.mega-menu-item') : null;
+            
+            if (megaMenuAdmin) {
+                megaMenuAdmin.classList.toggle('active');
+                // Update parent class for arrow rotation
+                if (megaMenuItemAdmin) {
+                    if (megaMenuAdmin.classList.contains('active')) {
+                        megaMenuItemAdmin.classList.add('menu-active');
+                    } else {
+                        megaMenuItemAdmin.classList.remove('menu-active');
+                    }
+                }
+            }
+            // Close other mega menu if open
+            if (megaMenu && megaMenu.classList.contains('active')) {
+                megaMenu.classList.remove('active');
+                if (megaMenuItem) {
+                    megaMenuItem.classList.remove('menu-active');
+                }
+            }
+        }
+
+        // Close mega menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const megaMenu = document.getElementById('megaMenu');
+            const megaMenuAdmin = document.getElementById('megaMenuAdmin');
+            const megaMenuItems = document.querySelectorAll('.mega-menu-item');
+            
+            let clickedInside = false;
+            megaMenuItems.forEach(item => {
+                if (item.contains(event.target)) {
+                    clickedInside = true;
+                }
+            });
+            
+            if (!clickedInside) {
+                if (megaMenu) {
+                    megaMenu.classList.remove('active');
+                    const megaMenuItem = megaMenu.closest('.mega-menu-item');
+                    if (megaMenuItem) {
+                        megaMenuItem.classList.remove('menu-active');
+                    }
+                }
+                if (megaMenuAdmin) {
+                    megaMenuAdmin.classList.remove('active');
+                    const megaMenuItemAdmin = megaMenuAdmin.closest('.mega-menu-item');
+                    if (megaMenuItemAdmin) {
+                        megaMenuItemAdmin.classList.remove('menu-active');
+                    }
+                }
+            }
+        });
+
+        // Close mega menu when pressing Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const megaMenu = document.getElementById('megaMenu');
+                const megaMenuAdmin = document.getElementById('megaMenuAdmin');
+                if (megaMenu) {
+                    megaMenu.classList.remove('active');
+                    const megaMenuItem = megaMenu.closest('.mega-menu-item');
+                    if (megaMenuItem) {
+                        megaMenuItem.classList.remove('menu-active');
+                    }
+                }
+                if (megaMenuAdmin) {
+                    megaMenuAdmin.classList.remove('active');
+                    const megaMenuItemAdmin = megaMenuAdmin.closest('.mega-menu-item');
+                    if (megaMenuItemAdmin) {
+                        megaMenuItemAdmin.classList.remove('menu-active');
+                    }
+                }
+            }
         });
     </script>
 
